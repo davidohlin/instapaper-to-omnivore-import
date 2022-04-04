@@ -7,7 +7,7 @@ import { finished } from "stream/promises";
 const OMNIVORE_API_URL = "https://api-prod.omnivore.app/api/graphql";
 const INSTAPAPER_CSV_EXPORT_PATH = `${__dirname}/instapaper-export.csv`;
 
-// https://github.com/omnivore-app/omnivore/blob/main/packages/api/src/schema
+// https://github.com/omnivore-app/omnivore/blob/main/packages/api/src/schema.ts
 const createArticleMutation = gql`
   mutation CreateArticleSavingRequest(
     $input: CreateArticleSavingRequestInput!
