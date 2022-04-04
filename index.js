@@ -3,7 +3,6 @@ import fs from "fs";
 import { parse } from "csv-parse";
 import { GraphQLClient, gql } from "graphql-request";
 import { finished } from "stream/promises";
-import { createArticleMutation } from "./queries";
 
 const OMNIVORE_API_URL = "https://api-prod.omnivore.app/api/graphql";
 const INSTAPAPER_CSV_EXPORT_PATH = `${__dirname}/instapaper-export.csv`;
