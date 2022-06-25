@@ -14,7 +14,7 @@ interface ImportItem {
 }
 
 const OMNIVORE_API_URL = "https://api-prod.omnivore.app/api/graphql";
-const INSTAPAPER_CSV_EXPORT_PATH = `${__dirname}/instapaper-export-test.csv`;
+const INSTAPAPER_CSV_EXPORT_PATH = `${__dirname}/instapaper-export.csv`;
 const csvWriter = createObjectCsvWriter({
   path: `error_${new Date().toJSON().slice(0, 10)}.csv`,
   header: [
