@@ -77,15 +77,15 @@ async function processCsv() {
 }
 
 async function main() {
-  if (!process.env.OMNIVORE_AUTH_COOKIE) {
+  if (!process.env.OMNIVORE_API_KEY) {
     throw new Error(
-      "No auth token found. Did you forget to add it to the .env file?"
+      "No API key found. Did you forget to add it to the .env file?"
     );
   }
 
   const client = new GraphQLClient(OMNIVORE_API_URL, {
     headers: {
-      Cookie: `auth=${process.env.OMNIVORE_AUTH_COOKIE};`,
+      authorization: process.env.OMNIVORE_API_KEY,
     },
   });
 
