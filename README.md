@@ -20,15 +20,12 @@ A little script that I made to import my huge collection of links from [Instapap
 
    **⚠️ The filename must be `instapaper-export.csv`**
 
-3. Go to https://omnivore.app, login, and copy the value of the **auth cookie**. How to do this differs for every browser I guess, but if you're using Chrome:
 
-   - Open **Developer Tools** (Option + Cmd + I)
-   - Go the **Application** tab
-   - Find the **auth** cookie in the list. Copy the value. It should look something like this: `eyJhbGciOiJIUzI1NiI ...`
+3. [Create an API key in Omnivore](https://omnivore.app/settings/api) and copy the value.
 
-4. Add the auth cookie value to the `.env` file:
+4. Add the API key to the `.env` file:
    ```
-   OMNIVORE_AUTH_COOKIE=eyJhbGciOiJIUzI1NiI ...
+   OMNIVORE_API_KEY=1d45ae09-789f-...
    ```
 5. Run the script. It might take a few minutes.
    ```
